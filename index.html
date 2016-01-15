@@ -3,22 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Nav on Scroll</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./assets/css/style.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="./assets/css/animate.css" media="screen" charset="utf-8">
+    <script src="./assets/js/jquery-1.11.0.min.js" charset="utf-8"></script>
+
 </head>
 <body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.scroll__section').secondNav({exit: 'fadeOutUp'});
+    });
+    </script>
 <div class="scroll__section">
-    <h1>Scroll Section</h1>
+    <h1>Second-Nav won't show here</h1>
 </div>
 
-<div class="nav animated animated-hold">
+<div class="second-nav animated animated-hold">
   <ul>
-    <a href="#"><li><p>Home</p></li></a>
-    <a href="#"><li><p>About</p></li></a>
-    <a href="#"><li><p>Contact</p></li></a>
+    <a href="#"><li><p>Yay!...Second-Nav is now Visible</p></li></a>
   </ul>
 </div>
-  <script src="./assets/js/jquery-1.11.0.min.js" charset="utf-8"></script>
+
   <script src="./assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>
