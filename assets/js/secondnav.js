@@ -3,18 +3,17 @@
   var options = {
     enter: 'slideInDown',
     exit: 'slideOutUp',
-    secondNav: '#second-nav'
+    secondNav: '#second-nav',
+		holdClass: '.animated-hold',
   }
-  $.extend( true, options, newoptions );
+
+  $.extend( true, options, newoptions ); // This is used to insert newoptions on init into the options array.
 
   var secondNav = jQuery(options.secondNav);
   var topHeader = jQuery(this).offset().top;
   var height = jQuery(this).outerHeight();
 
   secondNav.addClass('animated animated-hold');
-  // if(options.showMobile == true) {
-  //   secondNav.addClass('noMobile');
-  // }
 
   jQuery(window).scroll(function () {
 
@@ -22,7 +21,7 @@
       {
           if (!secondNav.hasClass(options.enter))
           {
-              secondNav.stop().addClass(options.enter).removeClass(options.exit).removeClass('animated-hold');
+              secondNav.stop().addClass(options.enter).removeClass(options.exit).removeClass(options.holdClass);
           }
       }
       else

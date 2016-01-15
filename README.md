@@ -57,9 +57,10 @@ $(document).ready(function() {
 
 **Note**: The default animation classes have been taken from Animate.css
 
-* **enter** (Class) - Set the _second-nav slide-in animation css class_ (Default: slideInDown)
-* **exit** (Class) - Set the _second-nav slide-out animation css class_ (Default: slideOutUp)
-* **secondNav** (ID) - The ID of the second navigation bar.
+* **enter** (Class) - Set the _second-nav slide-in animation css class_ (Default: .slideInDown)
+* **exit** (Class) - Set the _second-nav slide-out animation css class_ (Default: .slideOutUp)
+* **secondNav** (ID) - The ID of the second navigation bar (Default: .second-nav)
+* **holdClass** (ID) - The ID of the second navigation bar (Default: .animated-hold)
 
 Credits
 ==========================
