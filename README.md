@@ -7,7 +7,7 @@ A quick solution to add a **second navigation** to your website. This is a popul
 
 How does it work?
 ==========================
-1. Second-Nav visibility will automatically be set to 0 on page load (provided you have the _'animated-hold'_ class in your css).
+1. Second-Nav visibility will automatically be set to 0 on page load (via css).
 2. The **base** of the **No Show Area** is taken the point when the second-nav will enter.
 3. Once page is scrolled past the point of the **No Show Area**, the second-nav will appear.
 4. Upon scrolling past the base of the **No Show Area**, the second-nav will disappear.
@@ -60,7 +60,6 @@ $(document).ready(function() {
 * **enter** (Class) - Set the _second-nav slide-in animation css class_ (Default: .slideInDown)
 * **exit** (Class) - Set the _second-nav slide-out animation css class_ (Default: .slideOutUp)
 * **secondNav** (ID) - The ID of the second navigation bar (Default: .second-nav)
-* **holdClass** (ID) - The ID of the second navigation bar (Default: .animated-hold)
 
 Credits
 ==========================

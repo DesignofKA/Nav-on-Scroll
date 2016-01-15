@@ -4,7 +4,6 @@
     enter: 'slideInDown',
     exit: 'slideOutUp',
     secondNav: '#second-nav',
-		holdClass: '.animated-hold',
   }
 
   $.extend( true, options, newoptions ); // This is used to insert newoptions on init into the options array.
@@ -13,7 +12,6 @@
   var topHeader = jQuery(this).offset().top;
   var height = jQuery(this).outerHeight();
 
-  secondNav.addClass('animated animated-hold');
 
   jQuery(window).scroll(function () {
 
@@ -21,7 +19,7 @@
       {
           if (!secondNav.hasClass(options.enter))
           {
-              secondNav.stop().addClass(options.enter).removeClass(options.exit).removeClass(options.holdClass);
+              secondNav.stop().addClass(options.enter).removeClass(options.exit).css('visibility', 'visible');
           }
       }
       else
