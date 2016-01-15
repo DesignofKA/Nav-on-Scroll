@@ -1,29 +1,37 @@
 Second-Nav
 ==========================
 
-A quick solution to adding to add a **second navigation** to your website. This is a popular method used among many websites to avoid users scrolling back up to the top to navigate the site.
+A quick solution to add a **second navigation** to your website. This is a popular method used on many websites to avoid users scrolling back up to the top to navigate the site.
 
 **Recommended**: [Animate.css](https://daneden.github.io/animate.css/) - or any css3 animation library. Some code has been taken from Animate.css as a default for this plugin.
+
+How does it work?
+==========================
+1. Second-Nav visibility will automatically be set to 0 on page load (provided you have the _'animated-hold'_ class in your css).
+2. The **base** of the **No Show Area** is taken the point when the second-nav will enter.
+3. Once page is scrolled past the point of the **No Show Area**, the second-nav will appear.
+4. Upon scrolling past the base of the **No Show Area**, the second-nav will disappear.
 
 Basic Installation
 ==========================
 To get up and running, you will need to add set some html.
 
-**No Show Area**
+#No Show Area
+
 Create an **element** which will be used as an area (or marker) for where the second-nav will not appear (for example a slider or top header section);
 
 ```html
 <div class="dont_show">
-    <!--Second-Nav will not show here-->
+    <!--Second-Nav will not show here when top of viewport is within this area-->
 </div>
 ```
 
-**Second Navigation**
+#Second Navigation**
 Add your navigation bar:
 ```html
-<div id="second-nav">
+<nav id="second-nav">
   <!-- Second-Nav -->
-</div>
+</nav>
 ```
 
 **Script**
@@ -33,13 +41,6 @@ $(document).ready(function() {
     $('#dont_show').secondNav();
 });
 ```
-
-So What Happens?
-==========================
-1. Second-Nav visibility will automatically be set to 0 when the page loads (provided you have _'animated-hold'_ in your css).
-2. The base of the **No Show Area** is taken as a marker for when the second-nav will enter.
-3. Once page is scrolled past the point of the **No Show Area**, the second-nav will appear.
-4. Upon scrolling past the base of the **No Show Area**, the second-nav will disappear.
 
 Options
 ==========================
