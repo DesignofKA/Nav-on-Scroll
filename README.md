@@ -16,8 +16,7 @@ Basic Installation
 ==========================
 To get up and running, you will need to add set some html.
 
-#No Show Area
-
+##No Show Area
 Create an **element** which will be used as an area (or marker) for where the second-nav will not appear (for example a slider or top header section);
 
 ```html
@@ -26,7 +25,7 @@ Create an **element** which will be used as an area (or marker) for where the se
 </div>
 ```
 
-#Second Navigation**
+##Second Navigation
 Add your navigation bar:
 ```html
 <nav id="second-nav">
@@ -34,7 +33,7 @@ Add your navigation bar:
 </nav>
 ```
 
-**Script**
+##Script
 Initiate Plugin:
 ```javascript
 $(document).ready(function() {
