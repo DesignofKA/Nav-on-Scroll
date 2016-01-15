@@ -12,14 +12,14 @@
 <body>
     <script type="text/javascript">
     $(document).ready(function() {
-        $('.scroll__section').secondNav({exit: 'fadeOutUp'});
+        $('#dont_show').secondNav({showMobile: true});
     });
     </script>
-<div class="scroll__section">
+<div id="dont_show">
     <h1>Second-Nav won't show here</h1>
 </div>
 
-<div class="second-nav animated animated-hold">
+<div id="second-nav">
   <ul>
     <a href="#"><li><p>Yay!...Second-Nav is now Visible</p></li></a>
   </ul>

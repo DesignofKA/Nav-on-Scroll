@@ -9,7 +9,8 @@ body {
   height: 2000px;
   background: #ccc;
 }
-.scroll__section {
+
+#dont_show {
   position: absolute;
   display: flex;
   align-items: center;
@@ -21,11 +22,12 @@ body {
   background-color: #1abc9c;
   z-index: 9999;
 }
-.scroll__section h1 {
+#dont_show h1 {
   color: #16a085;
   text-transform: uppercase;
+  text-align: center;
 }
-.second-nav {
+#second-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,18 +37,91 @@ body {
   z-index: 9999;
 }
 
-.second-nav ul {
+#second-nav ul {
   text-align: center;
 }
 
-.second-nav ul a li {
+#second-nav ul a li {
   display: inline-block;
   margin:0 10px;
 
 }
 
-.second-nav ul a li p {
+#second-nav ul a li p {
   color: white;
   height: 100%;
   text-transform: uppercase;
+}
+
+/*Animation*/
+
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated-hold {
+  visibility: hidden;
+}
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
 }
