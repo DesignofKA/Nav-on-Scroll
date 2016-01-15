@@ -1,6 +1,8 @@
 Second-Nav
 ==========================
 
+<iframe src="ihttps://zippy.gfycat.com/DeliriousGentleBoar.gif" frameborder="0"></iframe>
+
 A quick solution to add a **second navigation** to your website. This is a popular method used on many websites to avoid users scrolling back up to the top to navigate the site.
 
 **Recommended**: [Animate.css](https://daneden.github.io/animate.css/) - or any css3 animation library. Some code has been taken from Animate.css as a default for this plugin.
