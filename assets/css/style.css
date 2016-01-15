@@ -1,0 +1,47 @@
+* {
+  padding:0;
+  margin:0;
+}
+body {
+  position: relative;
+  display: block;
+  height: 2000px;
+  background: #ccc;
+}
+.scroll__section {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #1abc9c;
+  z-index: 9999;
+}
+.scroll__section h1 {
+  color: #16a085;
+  text-transform: uppercase;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color:#3498db;
+  z-index: 9999;
+}
+
+.nav ul {
+  text-align: center;
+}
+
+.nav ul a li {
+  display: inline-block;
+}
+
+.nav ul a li p {
+  color: white;
+}
