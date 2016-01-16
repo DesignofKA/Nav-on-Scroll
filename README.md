@@ -1,7 +1,7 @@
 Second-Nav
 ==========================
 
-<iframe src="https://zippy.gfycat.com/DeliriousGentleBoar.gif" frameborder="0"></iframe>
+<iframe src="http://zippy.gfycat.com/DeliriousGentleBoar.gif" frameborder="0"></iframe>
 
 A quick solution to add a **second navigation** to your website. This is a popular method used on many websites to avoid users scrolling back up to the top to navigate the site.
 
@@ -19,12 +19,20 @@ Basic Installation
 To get up and running, you will need to add set some html.
 
 ##No Show Area
-Create an **element** which will be used as an area (or marker) for where the second-nav will not appear (for example a slider or top header section);
+Create an **element** which will be used as an area (or marker) for where the second-nav will not appear (for example a slider or top header section).
 
 ```html
 <div class="dont_show">
     <!--Second-Nav will not show here when top of viewport is within this area-->
 </div>
+```
+
+Alternatively, you can set a height value where the second-nav will appear (e.g. 500px) using in the _showPoint_ parameter.
+
+```javascript
+$(document).ready(function() {
+    $('#dont_show').secondNav({showPoint: 500});
+});
 ```
 
 ##Second Navigation
@@ -62,6 +70,7 @@ $(document).ready(function() {
 * **enter** (Class) - Set the _second-nav slide-in animation css class_ (Default: .slideInDown)
 * **exit** (Class) - Set the _second-nav slide-out animation css class_ (Default: .slideOutUp)
 * **secondNav** (ID) - The ID of the second navigation bar (Default: .second-nav)
+* **showPoint** (INT) - Height value where you would now like the second navigation to enter (Default: ID selected when initiating plugin)
 
 Credits
 ==========================
