@@ -60,7 +60,8 @@ $(document).ready(function() {
     $('#dont_show').secondNav({
       enter: 'fadeInDown',
       exit: 'fadeOutUp',
-      secondNav: '#second-nav'
+      secondNav: '#second-nav',
+      showPoint: 500
     });
 });
 ```
