@@ -10,7 +10,7 @@ A quick solution to add a **second navigation** to your website. This is a popul
 How does it work?
 ==========================
 1. Second-Nav visibility will automatically be set to 0 on page load (via css).
-2. The **base** of the **No Show Area** is taken the point when the second-nav will enter.
+2. The **base** of the **No Show Area** (or _showPoint_ parameter) will be taken the point when the second-nav will enter.
 3. Once page is scrolled past the point of the **No Show Area**, the second-nav will appear.
 4. Upon scrolling past the base of the **No Show Area**, the second-nav will disappear.
 
