@@ -1,8 +1,8 @@
 (function( $ ){
    $.fn.secondNav = function(newoptions) {
   var options = {
-    enter: 'slideInDown',
-    exit: 'slideOutUp',
+    enterClass: 'slideInDown',
+    exitClass: 'slideOutUp',
     secondNav: '#second-nav',
     showPoint: 0,
 		returnPoint: null,
@@ -22,19 +22,19 @@
 
       if(jQuery(this).scrollTop() > (options.showPoint))
       {
-          if (!secondNav.hasClass(options.enter))
+          if (!secondNav.hasClass(options.enterClass))
           {
-              secondNav.stop().addClass(options.enter).removeClass(options.exit).css('visibility', 'visible');
+              secondNav.stop().addClass(options.enterClass).removeClass(options.exitClass).css('visibility', 'visible');
           }
       }
 			// Function to add returnPoint functionality
       if((options.returnPoint) && (jQuery(this).scrollTop() < (options.returnPoint)))
       {
-          secondNav.removeClass(options.enter).addClass(options.exit);
+          secondNav.removeClass(options.enterClass).addClass(options.exitClass);
       }
       if((!options.returnPoint) && (jQuery(this).scrollTop() < (options.showPoint)))
       {
-          secondNav.removeClass(options.enter).addClass(options.exit);
+          secondNav.removeClass(options.enterClass).addClass(options.exitClass);
       }
   });
   };
