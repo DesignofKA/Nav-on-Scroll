@@ -72,6 +72,7 @@ $(document).ready(function() {
 * **exit** (Class) - Set the _second-nav slide-out animation css class_ (Default: .slideOutUp)
 * **secondNav** (ID) - The ID of the second navigation bar (Default: .second-nav)
 * **showPoint** (INT) - Height value where you would now like the second navigation to enter (Default: ID selected when initiating plugin)
+* **returnPoint** (INT) - Market placement for when Second Nav should return (Default: Null & will return at showPoint base)
 
 Credits
 ==========================
