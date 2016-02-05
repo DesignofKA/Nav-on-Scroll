@@ -62,6 +62,7 @@ $(document).ready(function() {
       exit: 'fadeOutUp',
       secondNav: '#second-nav',
       showPoint: 500
+      returnPoint: 200
     });
 });
 ```
