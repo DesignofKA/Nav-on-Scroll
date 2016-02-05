@@ -4,7 +4,8 @@
     enter: 'slideInDown',
     exit: 'slideOutUp',
     secondNav: '#second-nav',
-    showPoint: 0
+    showPoint: 0,
+		returnPoint: null,
   }
 
   $.extend( true, options, newoptions ); // This is used to insert newoptions on init into the options array.
@@ -26,7 +27,12 @@
               secondNav.stop().addClass(options.enter).removeClass(options.exit).css('visibility', 'visible');
           }
       }
-      else
+			// Function to add returnPoint functionality
+      if((options.returnPoint) && (jQuery(this).scrollTop() < (options.returnPoint)))
+      {
+          secondNav.removeClass(options.enter).addClass(options.exit);
+      }
+      if((!options.returnPoint) && (jQuery(this).scrollTop() < (options.showPoint)))
       {
           secondNav.removeClass(options.enter).addClass(options.exit);
       }
